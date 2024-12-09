@@ -1,0 +1,243 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+:root {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 200;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #9CC5A1 0%,
+    #49A078 25%,
+    #216869 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  /* place-itemms:center; */
+  min-width: 320px;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  
+  margin:15px;
+} */
+/* button:hover {
+  border-color: #111112;
+  ;
+}  */
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+button{
+  padding: 0.8em 1.2em;
+  color: rgb(16, 16, 16);
+  border-radius: 50px;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-right: 25px;
+  margin-top:10px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btnadd{
+  background-color:rgb(10, 203, 10);
+   border:darkgreen solid 1px;
+  }
+
+ .btnreject{
+  background-color: rgb(242, 37, 37);
+  border:darkred solid 1px;
+  }
+  .btnadd:hover{
+    background-color: rgb(74, 222, 74);
+    border: rgb(2, 90, 2) solid 1px;
+  }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+main {
+  color: #000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+tr {
+  border-radius: 10px;
+  background-color: #80DBC1;
+  color: black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #50CEAA;
+}
+
+.navbar{
+  /* background-color: var(--text-color); */
+  /* border-bottom: 1px solid #e3e7ea; */
+  width: 100%; 
+ display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  /* padding: 1em 2em; */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1); */
+
+}
+.nav-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem; /* Space between navigation items */
+  padding-right: 15px;
+}
+
+.nav-item {
+  display: inline;
+}
+
+/* .nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 2em; */
+/* } */
+
+/* .nav-item {
+  padding: 0 0.5rem;
+  list-style: none;
+} */
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: rgb(20, 117, 18); ; /* Optional hover effect */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(67, 135, 52); /* Optional active color */
+}
+/* .active {
+  font-weight: 700;
+} */
+
+.table {
+  width: 80vw;
+  table-layout: fixed;
+}
+.image{
+  width: 100px;
+  height: 100px;
+}
+.himage{
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+
+}
+.hdetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #85BAA1;
+ 
+  border-radius: 20px;
+}
+
+.filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #50CEAA;
+  /* border-radius: 20px; */
+  border-top-right-radius : 20px;
+  border-top-left-radius : 20px;
+}
+/* .table{
+  /* width: 100%; */
+  /* border-collapse: collapse; 
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+
+
+} */
+ .table{
+  border-radius: 25px;
+ 
+ }
+ .sbtnreject{
+  /* padding: 0.8em 1.2em; */
+  color: rgb(16, 16, 16);
+  border-radius: 50px;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-left: 2.3rem;
+  margin-top:10px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #DF2935;
+  border:darkred solid 1px;
+ }
