@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import  { useEffect, useState, useMemo } from 'react';
 import type Candidate from '../interfaces/Candidate.interface';
 
 const SavedCandidates = () => {
